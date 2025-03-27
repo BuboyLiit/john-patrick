@@ -6,8 +6,154 @@
     <title>John Patrick Lacerna - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" href="style.css">>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" href="style.css">
 
+    <style>
+                html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background */
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #43cea2, #185a9d); /* Gradient header */
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 700;
+        }
+
+        header h2 {
+            margin: 15px 0;
+            font-weight: 400;
+            font-size: 1.8em;
+            opacity: 0.9;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 30px 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: #e0f7fa;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #e0f7fa;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        section {
+            padding: 80px 20px;
+            margin: 50px auto;
+            max-width: 1000px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        img {
+            display: block;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section1 {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        #favourite, #contact {
+            background: #f0f8ff; /* Light blue background for these sections */
+        }
+
+        #favourite h2, #contact h2 {
+            color: #2c3e50;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                margin-bottom: 40px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            header h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
